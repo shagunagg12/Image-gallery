@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature's Beauty</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mountains">Mountains</button>
+            <button class="filter-btn" data-filter="forests">Forests</button>
+            <button class="filter-btn" data-filter="waterfalls">Waterfalls</button>
+            <button class="filter-btn" data-filter="beaches">Beaches</button>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <div class="image-card" data-category="mountains">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountain landscape">
+            <div class="image-overlay">
+                <h3>Majestic Mountains</h3>
+                <p>Swiss Alps</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="forests">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Misty forest">
+            <div class="image-overlay">
+                <h3>Mystical Forest</h3>
+                <p>Pacific Northwest</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="waterfalls">
+            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9" alt="Waterfall">
+            <div class="image-overlay">
+                <h3>Cascading Waters</h3>
+                <p>Iceland</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="beaches">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical beach">
+            <div class="image-overlay">
+                <h3>Tranquil Shore</h3>
+                <p>Maldives</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="mountains">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Snowy peaks">
+            <div class="image-overlay">
+                <h3>Winter Peaks</h3>
+                <p>Canadian Rockies</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="forests">
+            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d" alt="Autumn forest">
+            <div class="image-overlay">
+                <h3>Autumn Colors</h3>
+                <p>Vermont</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="waterfalls">
+            <img src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc" alt="Tropical waterfall">
+            <div class="image-overlay">
+                <h3>Hidden Falls</h3>
+                <p>Costa Rica</p>
+            </div>
+        </div>
+        <div class="image-card" data-category="beaches">
+            <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a" alt="Sunset beach">
+            <div class="image-overlay">
+                <h3>Golden Sunset</h3>
+                <p>Thailand</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox image">
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
